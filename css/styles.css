@@ -1,0 +1,58 @@
+:root{
+  --fondo:#EEF4F5; --tinta:#12263A; --suave:#5B6F80; --linea:#D5E0E4;
+  --primario:#0E7C7B; --primario-osc:#0A5C5B; --acento:#F2B134; --peligro:#C8553D; --blanco:#fff;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,"Segoe UI",Arial,sans-serif;background:var(--fondo);color:var(--tinta);line-height:1.5}
+a{color:inherit}
+.topbar{background:var(--tinta);color:#fff;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem 2rem;padding:.9rem clamp(1rem,4vw,3rem)}
+.brand{font-weight:800;font-size:1.4rem;text-decoration:none;display:flex;flex-direction:column;line-height:1.1}
+.brand span{font-weight:500;font-size:.8rem;color:var(--acento)}
+.menu{display:flex;gap:.25rem;flex-wrap:wrap}
+.menu a{text-decoration:none;padding:.5rem .9rem;border-radius:999px;font-weight:600;color:#C9D8E2}
+.menu a:hover{background:rgba(255,255,255,.1);color:#fff}
+.menu a.activo{background:var(--acento);color:var(--tinta)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--acento);outline-offset:2px}
+main{max-width:1100px;margin:0 auto;padding:2rem clamp(1rem,4vw,2rem) 3rem}
+h1{font-size:clamp(1.8rem,4vw,2.6rem);margin:0 0 .25rem;font-weight:800;letter-spacing:-.02em}
+h2{font-size:1.2rem;margin:2rem 0 .75rem}
+.sub{color:var(--suave);margin:0 0 1.5rem;max-width:60ch}
+.hero{background:var(--primario);color:#fff;border-radius:20px;padding:clamp(1.5rem,4vw,3rem);display:grid;gap:1.5rem;grid-template-columns:1fr auto;align-items:center}
+.hero h1{color:#fff}
+.hero p{margin:0;max-width:52ch;color:#D6F0EE}
+.hero .patas{font-size:5rem;line-height:1}
+@media(max-width:640px){.hero{grid-template-columns:1fr}.hero .patas{display:none}}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin-top:1.25rem}
+.stat{background:var(--blanco);border-left:6px solid var(--primario);padding:1rem 1.25rem;border-radius:6px}
+.stat:nth-child(2){border-color:var(--acento)}.stat:nth-child(3){border-color:var(--tinta)}.stat:nth-child(4){border-color:var(--peligro)}
+.stat b{display:block;font-size:2rem;line-height:1}
+.stat small{color:var(--suave)}
+.tablewrap{overflow-x:auto;background:var(--blanco);border-radius:10px;border:1px solid var(--linea)}
+table{width:100%;border-collapse:collapse;min-width:560px}
+th,td{text-align:left;padding:.7rem 1rem;border-bottom:1px solid var(--linea)}
+th{background:#F6FAFB;font-size:.85rem;color:var(--suave);font-weight:600}
+tr:last-child td{border-bottom:0}
+.badge{display:inline-block;padding:.15rem .6rem;border-radius:999px;font-size:.8rem;font-weight:700}
+.b-pendiente{background:#FDF0D0;color:#7A5600}.b-confirmada{background:#D5F0EC;color:#0A5C5B}
+.b-atendida{background:#E3E8EE;color:#34495C}.b-cancelada{background:#F8DDD6;color:#8A2F1A}
+.toolbar{display:flex;flex-wrap:wrap;gap:.75rem;margin-bottom:1rem;align-items:center}
+button,.btn{font:inherit;font-weight:700;border:0;border-radius:8px;padding:.6rem 1.1rem;cursor:pointer;background:var(--primario);color:#fff}
+button:hover{background:var(--primario-osc)}
+button.sec{background:transparent;color:var(--primario);border:2px solid var(--primario);padding:.25rem .7rem;font-size:.85rem}
+button.sec:hover{background:var(--primario);color:#fff}
+button.danger{color:var(--peligro);border-color:var(--peligro)}
+button.danger:hover{background:var(--peligro);color:#fff}
+form.card{background:var(--blanco);border:1px solid var(--linea);border-radius:10px;padding:1.25rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
+label{display:flex;flex-direction:column;gap:.3rem;font-weight:600;font-size:.9rem}
+input,select{font:inherit;padding:.55rem .7rem;border:1px solid #B7C6CE;border-radius:8px;background:#fff}
+form.card .full{grid-column:1/-1}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1rem}
+.vet{background:var(--blanco);border:1px solid var(--linea);border-radius:10px;padding:1.25rem}
+.vet h3{margin:0}.vet p{margin:.2rem 0;color:var(--suave)}
+.empty{padding:1.5rem;color:var(--suave)}
+
+
+.footer{text-align:center;color:var(--suave);font-size:.85rem;padding:1.5rem}
+
+.badge{background:#E3E8EE;color:#34495C}.b-ok{background:#D5F0EC;color:#0A5C5B}.b-warn{background:#FDF0D0;color:#7A5600}.b-bad{background:#F8DDD6;color:#8A2F1A}
+button{font:inherit;font-weight:700;border:0;border-radius:8px;padding:.6rem 1.1rem;cursor:pointer;background:var(--primario);color:#fff}

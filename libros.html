@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Libros – LibroNet</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="topbar">
+<a class="brand" href="index.html">LibroNet<span>Biblioteca Escolar San Martín</span></a>
+<nav class="menu" aria-label="Menú principal"><a href="index.html">Inicio</a><a href="libros.html" class="activo">Libros</a><a href="socios.html">Socios</a><a href="prestamos.html">Préstamos</a></nav>
+</header>
+<main>
+<h1>Libros</h1>
+<p class="sub">Catálogo y ejemplares disponibles.</p>
+<div class="tablewrap"><table><thead><tr><th>Código</th><th>Título</th><th>Autor</th><th>Disponibles</th></tr></thead>
+<tbody>
+<tr><td>001</td><td>Cien años de soledad</td><td>G. García Márquez</td><td>3</td></tr>
+<tr><td>002</td><td>Azul...</td><td>Rubén Darío</td><td>2</td></tr>
+<tr><td>003</td><td>El principito</td><td>A. de Saint-Exupéry</td><td>4</td></tr>
+<tr><td>004</td><td>Don Quijote</td><td>M. de Cervantes</td><td>1</td></tr>
+</tbody></table></div>
+<h2>Nuevo registro</h2>
+<form class="card" action="libros.html">
+<label>Título <input type="text" name="título"></label>
+<label>Autor <input type="text" name="autor"></label>
+<label>Disponibles <input type="text" name="disponibles"></label>
+<div class="full"><button type="submit">Guardar</button></div>
+</form>
+</main>
+<footer class="footer">Prototipo académico · datos ficticios</footer>
+</body>
+</html>

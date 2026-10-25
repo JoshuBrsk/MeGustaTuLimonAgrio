@@ -9,12 +9,12 @@
 <body>
 <header class="topbar">
 <a class="brand" href="index.html">LibroNet<span>Biblioteca Escolar San Martín</span></a>
-<nav class="menu" aria-label="Menú principal"><a href="index.html">Inicio</a><a href="libros.html">Libros</a><a href="socios.html">Socios</a><a href="prestamos.html" class="activo">Préstamos</a></nav>
+<nav class="menu" aria-label="Menú principal"><a href="index.html">Inicio</a><a href="libros.html">Libros</a><a href="socios.html">Clientes</a><a href="prestamos.html" class="activo">Préstamos</a></nav>
 </header>
 <main>
 <h1>Préstamos</h1>
 <p class="sub">Préstamos y devoluciones.</p>
-<div class="tablewrap"><table><thead><tr><th>Código</th><th>Libro</th><th>Socio</th><th>Devolución</th><th>Estado</th></tr></thead>
+<div class="tablewrap"><table><thead><tr><th>Código</th><th>Libro</th><th>Cliente</th><th>Devolución</th><th>Estado</th></tr></thead>
 <tbody>
 <tr><td>001</td><td>El principito</td><td>Daniela Cruz</td><td>2026-10-28</td><td><span class="badge b-warn">Prestado</span></td></tr>
 <tr><td>002</td><td>Don Quijote</td><td>Luis Herrera</td><td>2026-10-15</td><td><span class="badge b-bad">Atrasado</span></td></tr>
@@ -23,7 +23,7 @@
 <h2>Nuevo registro</h2>
 <form class="card" action="prestamos.html">
 <label>Libro <input type="text" name="libro"></label>
-<label>Socio <input type="text" name="socio"></label>
+<label>Cliente <input type="text" name="Cliente"></label>
 <label>Devolución <input type="text" name="devolución"></label>
 <label>Estado <input type="text" name="estado"></label>
 <div class="full"><button type="submit">Guardar</button></div>
